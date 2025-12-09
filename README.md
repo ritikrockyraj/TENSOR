@@ -3,10 +3,10 @@
 ![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
 ![Streamlit](https://img.shields.io/badge/Streamlit-App-FF4B4B)
 ![Scikit-Learn](https://img.shields.io/badge/ML-Scikit--Learn-orange)
-![Status](https://img.shields.io/badge/Status-Completed-success)
+![Status](https://img.shields.io/badge/Status-Deployed-success)
 
 ## 🚀 Live Demo
-**Check out the live app here:** [LINK_WILL_GO_HERE](put_your_link_here)
+### 👉 **Click Here to Run the App:** [Smart Loan Predictor Live](https://ritik-loan-predictor.streamlit.app/)
 
 ---
 
@@ -34,7 +34,7 @@ To improve model performance, new features were derived:
 
 ### 3. Model Selection & Tuning
 - Tested multiple algorithms: **Logistic Regression**, **Random Forest**, and **Decision Trees**.
-- **Final Model:** Selected **Logistic Regression (with Feature Engineering)** as it provided the best balance between bias and variance ("Good Fit").
+- **Final Model:** Selected **Logistic Regression (with Feature Engineering)** as it provided the best balance between bias and variance.
 
 ---
 
@@ -47,10 +47,9 @@ We prioritized **Recall** over Accuracy. In banking, **False Negatives** (predic
 | **Recall (Sensitivity)** | **~98%** | The model catches 98% of risky applicants. |
 | **Accuracy** | **~82%** | Overall correctness of predictions. |
 | **F2 Score** | **~0.94** | Weighted score favoring Recall. |
-| **ROC-AUC** | **High** | Excellent separation between classes. |
 
 ### 📉 Business Logic & Optimization
-- **Threshold Tuning:** The standard prediction threshold is 0.5. However, to minimize financial risk, we optimized the decision threshold to **0.07**.
+- **Threshold Tuning:** Optimized the decision threshold to **0.07** (instead of default 0.5) to minimize financial risk.
 - **Reasoning:** It is safer for the bank to double-check a safe applicant than to approve a risky loan. This strict threshold ensures that only highly eligible candidates get an automatic "Approved" signal.
 
 ---
@@ -60,13 +59,7 @@ We prioritized **Recall** over Accuracy. In banking, **False Negatives** (predic
 - **Smart UI:** Professional "Fintech" style interface built with Streamlit.
 - **Explainability:** - 🟢 **Success:** Displays confidence score for approved loans.
   - 🔴 **Rejection Logic:** Explicitly tells the user *why* they were rejected (e.g., "Low Income", "Bad Credit History").
-## 🌐 Deployment
 
-The application is deployed using **Streamlit Cloud**, which provides seamless integration with GitHub.
-
-- **Platform:** Streamlit Cloud
-- **CI/CD Pipeline:** The app automatically updates whenever changes are pushed to the GitHub repository, ensuring the latest version is always live.
-- **Server:** Running on Python 3.9 environment.
 ---
 
 ## 🛠️ Tech Stack
@@ -77,8 +70,15 @@ The application is deployed using **Streamlit Cloud**, which provides seamless i
 
 ---
 
+## 🌐 Deployment
+The application is deployed using **Streamlit Cloud** with CI/CD integration.
+- **Live URL:** [https://ritik-loan-predictor.streamlit.app/](https://ritik-loan-predictor.streamlit.app/)
+- **Continuous Deployment:** Any changes pushed to this GitHub repository are automatically reflected in the live app.
+
+---
+
 ## ⚙️ How to Run Locally
 
 1. **Clone the repository**
    ```bash
-   git clone [https://github.com/your-username/loan-prediction-app.git](https://github.com/your-username/loan-prediction-app.git)
+   git clone [https://github.com/ritikrockyraj/Loan-App-Final.git](https://github.com/ritikrockyraj/Loan-App-Final.git)
