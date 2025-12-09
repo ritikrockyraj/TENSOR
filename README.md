@@ -60,7 +60,13 @@ We prioritized **Recall** over Accuracy. In banking, **False Negatives** (predic
 - **Smart UI:** Professional "Fintech" style interface built with Streamlit.
 - **Explainability:** - 🟢 **Success:** Displays confidence score for approved loans.
   - 🔴 **Rejection Logic:** Explicitly tells the user *why* they were rejected (e.g., "Low Income", "Bad Credit History").
+## 🌐 Deployment
 
+The application is deployed using **Streamlit Cloud**, which provides seamless integration with GitHub.
+
+- **Platform:** Streamlit Cloud
+- **CI/CD Pipeline:** The app automatically updates whenever changes are pushed to the GitHub repository, ensuring the latest version is always live.
+- **Server:** Running on Python 3.9 environment.
 ---
 
 ## 🛠️ Tech Stack
